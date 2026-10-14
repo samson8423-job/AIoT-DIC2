@@ -1,6 +1,12 @@
 # 50 Startups：多元線性回歸與特徵選擇範例
 
-此專案為教學範例，示範如何比較多種特徵選擇方法（Lasso、Forward SFS、RFE、ElasticNet、Exhaustive）在 50 Startups 資料集上的預測表現，並以 Flask 提供互動式網頁介面展示模型結果與診斷。
+![Demo](demo.png)
+
+**🔗 GitHub 倉庫：** [samson8423-job/AIoT-DIC2](https://github.com/samson8423-job/AIoT-DIC2)
+
+**🌐 線上演示：** [https://samson8423-job.github.io/AIoT-DIC2/](https://samson8423-job.github.io/AIoT-DIC2/)
+
+此專案為教學範例，示範如何比較多種特徵選擇方法（Lasso、Forward SFS、RFE、ElasticNet、Exhaustive）在 50 Startups 資料集上的預測表現，並以互動式網頁介面展示模型結果與診斷。
 
 ## 快速開始（中文）
 
