@@ -137,11 +137,32 @@ All 5 methods were benchmarked across $k=1 \dots 5$ features on the out-of-sampl
 
 ## ☁️ Deployment
 
-### 1. GitHub Repository (Active)
-🔗 **[https://github.com/samson8423-job/AIoT-DIC2](https://github.com/samson8423-job/AIoT-DIC2)**
-Main repository for feature selection and multiple linear regression analysis.
+### 1. GitHub Pages (推薦用於靜態展示)
+🔗 **[https://samson8423-job.github.io/AIoT-DIC2/](https://samson8423-job.github.io/AIoT-DIC2/)**
 
-### 2. Vercel
+**自動部署步驟：**
+1. 推送到 `main` 分支：
+   ```bash
+   git add .
+   git commit -m "Update deployment"
+   git push origin main
+   ```
+
+2. GitHub Actions 會自動執行 `.github/workflows/pages.yml`，部署到 GitHub Pages
+
+3. 在倉庫 Settings → Pages 中確認：
+   - **Source** 設為 `GitHub Actions`
+   - 啟用部署保護規則（可選）
+
+**部署內容：** 靜態 HTML、CSS、JavaScript、JSON 資料（不包含 Flask 伺服器）
+
+**故障排查：**
+- ✅ 已新增 `.nojekyll` 檔案以禁用 Jekyll 處理
+- ✅ `index.html` 在根目錄
+- ✅ `model_data.js` 和 `static/` 資料夾已提交到 Git
+- 如仍無法部署，檢查倉庫設定中的 Pages 配置
+
+### 2. Vercel（可選：用於 Python 後端）
 Configured for zero-config Vercel Python serverless deployment via `api/index.py` and `vercel.json`.
 
 ---
