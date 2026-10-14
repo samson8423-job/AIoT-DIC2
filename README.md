@@ -10,17 +10,37 @@
 
 ## 快速開始（中文）
 
-- 安裝依賴：
+### 🌐 線上使用（推薦）
+直接瀏覽 GitHub Pages 版本：[https://samson8423-job.github.io/AIoT-DIC2/](https://samson8423-job.github.io/AIoT-DIC2/)
+
+### 💻 本機開發（可選）
+
+1. 克隆倉庫並安裝依賴：
 
 ```bash
+git clone https://github.com/samson8423-job/AIoT-DIC2.git
+cd AIoT-DIC2
 pip install -r requirements.txt
 ```
 
-- 本機啟動網站（開發模式）：
+2. 啟動 Flask 開發伺服器（用於本機開發）：
 
 ```bash
 python app.py
 # 然後開啟瀏覽器：http://localhost:5000/
+```
+
+3. 或直接用瀏覽器打開 `index.html`（靜態版本）：
+
+```bash
+# Windows
+start index.html
+
+# macOS
+open index.html
+
+# Linux
+xdg-open index.html
 ```
 
 ## 主要檔案說明
