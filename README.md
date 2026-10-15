@@ -1,4 +1,4 @@
-# 50 Startups：多元線性回歸與特徵選擇範例
+# 50 Startups：多元線性回歸與特徵選擇
 
 ![Demo](demo.png)
 
@@ -165,18 +165,3 @@ All 5 methods were benchmarked across $k=1 \dots 5$ features on the out-of-sampl
 ### 2. Vercel（可選：用於 Python 後端）
 Configured for zero-config Vercel Python serverless deployment via `api/index.py` and `vercel.json`.
 
----
-
-## 🙏 Acknowledgments & References
-
-We gratefully acknowledge the following references, datasets, and open-source tools:
-
-1. **Design & Layout Reference**:
-   - [StatsUnlock Multiple Linear Regression Calculator](https://statsunlock.com/multiple-linear-regression-calculator/): Inspired the SaaS aesthetic, coefficient tables, VIF multicollinearity gauges, and statistical reporting layout.
-2. **Dataset**:
-   - [50 Startups Dataset (Avik Jain 100-Days-Of-ML-Code)](https://raw.githubusercontent.com/Avik-Jain/100-Days-Of-ML-Code/master/datasets/50_Startups.csv).
-3. **Core Libraries**:
-   - [Flask](https://flask.palletsprojects.com/): Python micro web framework.
-   - [Scikit-learn](https://scikit-learn.org/): For LassoCV, ElasticNetCV, SequentialFeatureSelector, and RFE.
-   - [Statsmodels](https://www.statsmodels.org/): For OLS inference, $t$-tests, $p$-values, confidence intervals, and VIF calculations.
-   - [Chart.js](https://www.chartjs.org/): For responsive, interactive dual-panel line charts.

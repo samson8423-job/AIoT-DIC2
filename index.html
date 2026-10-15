@@ -170,7 +170,7 @@
 
     /* Hero Banner */
     .hero-card {
-      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #3730a3 100%);
+      background: linear-gradient(135deg, #45bcec 0%, #3db3e3 40%, #87f5ff 100%);
       color: white;
       border-radius: var(--radius-xl);
       padding: 36px 40px;
@@ -808,17 +808,10 @@
         </div>
         <div class="header-title-group">
           <h1>
-            <i class="fa-solid fa-chart-line" style="color: var(--primary);"></i>
-            50 Startups 多元線性回歸探索器
-            <span class="brand-badge">教學範例</span>
+            <i class="fa-solid fa-chart-line" style="color: #fff;"></i>
+            <span style="color: #fff;">50 Startups 多元線性回歸探索器</span>
           </h1>
         </div>
-      </div>
-      <div class="header-actions">
-        <a href="https://statsunlock.com/multiple-linear-regression-calculator/" target="_blank" class="ref-btn">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          樣式參考
-        </a>
       </div>
     </div>
   </header>
@@ -1402,6 +1395,7 @@
 
     function updateOutliersTable(outliers) {
       const tbody = document.getElementById('outliersTableBody');
+      if (!tbody) return;
       tbody.innerHTML = '';
 
       outliers.forEach(o => {
